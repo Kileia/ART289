@@ -1,0 +1,78 @@
+/* Homepage */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind&display=swap');
+
+body {
+    background-color: #fbf0d9;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage {
+    margin-top: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 70px;
+}
+
+.homepage h1,p {
+    /* https://blog.logrocket.com/creating-typewriter-animation-css/ */
+    white-space: nowrap;
+    margin: 0.5rem auto;
+    overflow: hidden;
+}
+
+.homepage h1{
+    color: #4D4637;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 10rem;
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: typewriter_1 10s steps(12) 1s 1 normal both,
+        first_cursor 900ms steps(12) 8;
+}
+
+.homepage p{
+    color: #B3AA99;
+    font-family: 'Hind', sans-serif;
+    font-size: 3rem;
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: typewriter_2 5s steps(31) 1s 1 normal both,
+        second_cursor 900ms steps(31) infinite;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+@keyframes typewriter_1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typewriter_2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes first_cursor {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.9);
+    }
+    to {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  @keyframes second_cursor{
+    from {
+      border-right-color: rgba(17, 17, 17, 0.9);
+    }
+    to {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+  }
