@@ -1,2 +1,2 @@
-# ART289
+# ART289 resume
 Winter term 24
